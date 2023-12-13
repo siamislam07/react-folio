@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import pdf from '../../../public/myresume.pdf'
+import pdf from '../../assets/pdf/myresume.pdf'
 import s from "../../assets/animation/navicon.json"
 import { useLottie } from "lottie-react";
+import download from '../../assets/icons/download.png'
 
 const Navbar = () => {
 
@@ -12,7 +13,8 @@ const Navbar = () => {
         <>
             <li><NavLink to='/' className="btn btn-outline btn-default pt-2 border-b-amber-600 border-neutral normal-case text-lg text-white transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:text-white">Home</NavLink></li>
 
-            <li><NavLink to='/a' className="btn btn-outline btn-default pt-2 border-b-amber-600 border-neutral normal-case text-lg text-white transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:text-white">About</NavLink></li>
+            <li><NavLink to='/a' className="btn btn-outline btn-default pt-2 border-b-red-600 border-neutral normal-case text-lg text-white transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:text-white">About</NavLink></li>
+            <li><NavLink to='/a' className="btn btn-outline btn-default pt-2 border-b-blue-600 border-neutral normal-case text-lg text-white transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:text-white">Projects</NavLink></li>
             
         </>
 
@@ -37,7 +39,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className={navbar ? 'navbar bg-gradient-to-r from-slate-300 via-blue-500 to-blue-700 bg-white bg-opacity-10 fixed z-10 bg-transparent' : 'navbar bg-white bg-opacity-10 fixed z-10 bg-transparent'}>
+            <div className={navbar ? 'navbar bg-gradient-to-r from-black-100 via-blue-700 to-blue-800 bg-white bg-opacity-10 fixed z-10 bg-transparent transition-all duration-700 delay-700' : 'navbar delay-700 transition-all duration-700 bg-white bg-opacity-10 fixed z-10 bg-transparent'}>
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -57,7 +59,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end mr-20">
-                    <a href={pdf} className="btn" download="Resume">Get My Resume</a>
+                    <a href={pdf} className="btn" download="Resume"><img src={download} className="hover:animate-bounce w-8" alt="" />Get My Resume </a>
                 </div>
             </div>
         </div>
