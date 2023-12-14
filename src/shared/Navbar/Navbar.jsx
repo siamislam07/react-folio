@@ -9,7 +9,8 @@ const Navbar = () => {
 
     const [navbar, setNavbar] = useState(false)
 
-    const navLinks =
+    const navLinks =    
+    
         <>
             <li><NavLink to='/' className="btn btn-outline btn-default pt-2 border-b-amber-600 border-neutral normal-case text-lg text-white transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none hover:text-white">Home</NavLink></li>
 
