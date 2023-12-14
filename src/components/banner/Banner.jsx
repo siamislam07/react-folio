@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import fb from '../../assets/icons/facebook.png';
 import linkedin from '../../assets/icons/linkedin.png';
 import mypic from '../../assets/img/My project.png'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Home = () => {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 3000
+        })
+    }, [])
+
     return (
         <div className='skew-y-6'>
             {/* Your Banner Code */}
@@ -11,8 +21,10 @@ const Home = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content flex-col lg:flex-row-reverse text-center text-neutral-content lg:gap-96">
                     {/* Your Hero Section Code */}
-                    <div className=' h-[335px] hover:-skew-y-6 transition-all duration-700 bg-slate-600 rounded-lg border mt-40'>
-                        <div className="relative  -top-40 hero-content flex-col lg:flex-row-reverse">
+                    <div  className='h-[335px] hover:-skew-y-6 transition-all duration-700 bg-slate-600 rounded-lg border mt-40' data-aos="fade-right">
+                        <div data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="2100" className="relative  -top-40 hero-content flex-col lg:flex-row-reverse ">
                             <img
                                 src={mypic}
                                 className="max-w-sm rounded-lg shadow-4xl "
@@ -41,6 +53,11 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <MessengerCustomerChat
+                pageId="197394270118190"
+                appId="281256954477258"
+
+            />
         </div>
     );
 };

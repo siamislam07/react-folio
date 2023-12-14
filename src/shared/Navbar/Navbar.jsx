@@ -59,7 +59,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end mr-20">
-                    <a href={pdf} className="btn" download="Resume"><img src={download} className="hover:animate-bounce w-8" alt="" />Get My Resume </a>
+                    <a href={pdf} className="btn" download="Resume">
+                        <img src={download} className="hover:animate-bounce w-8" alt="" />Get My Resume </a>
                 </div>
             </div>
         </div>

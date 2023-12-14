@@ -1,3 +1,6 @@
+
+
+
 const Footer = () => {
     return (
         // <footer className="footer p-4 md:p-10 bg-base-200 text-base-content flex flex-col md:flex-row justify-between">
@@ -22,7 +25,9 @@ const Footer = () => {
         //         <a className="link link-hover">Press kit</a>
         //     </nav>
         // </footer>
+
         <footer className="footer footer-center p-4 bg-base-300 text-base-content">
+            
             <aside>
                 <p>Copyright © 2023 - All right reserved by Siam Industries Ltd</p>
             </aside>

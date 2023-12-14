@@ -25,7 +25,7 @@ const Contact = () => {
 
     const options = {
         animationData: email,
-        loop: 2,
+        loop: 3,
 
     };
 
@@ -56,6 +56,8 @@ const Contact = () => {
                 </div>
                 <button type="submit" className="w-full p-3 text-sm font-bold tracki uppercase rounded bg-violet-400 text-gray-900">Send Message</button>
             </form>
+
+            
         </div>
     );
 };
