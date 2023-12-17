@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import pdf from '../../assets/pdf/myresume.pdf'
+import pdf from '../../assets/pdf/siamIslam.pdf'
 import s from "../../assets/animation/navicon.json"
 import { useLottie } from "lottie-react";
 import download from '../../assets/icons/download.png'
@@ -60,8 +60,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end mr-20">
-                    <a href={pdf} className="btn" download="Resume">
-                        <img src={download} className="hover:animate-bounce w-8" alt="" />Get My Resume </a>
+                    <a href={pdf} className="btn" download="Siam-Islam">
+                        <img src={download} className="hover:animate-bounce w-8" alt="resume" />Get My Resume </a>
                 </div>
             </div>
         </div>
