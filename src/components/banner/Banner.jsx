@@ -15,7 +15,7 @@ const Home = () => {
     }, [])
 
     return (
-        <div className='skew-y-6'>
+        <div className='skew-y-6 '>
             {/* Your Banner Code */}
             <div className="hero min-h-screen ">
                 <div className="hero-overlay bg-opacity-60"></div>
